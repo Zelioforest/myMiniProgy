@@ -2,7 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        String poly = "ghjkjhgl";
+        String poly = "level";
         boolean flag = true;
         if (chekPoly(poly, flag)) {
             System.out.println("Yes");
