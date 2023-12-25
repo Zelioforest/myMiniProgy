@@ -3,23 +3,22 @@
 public class Main {
     public static void main(String[] args) {
         String poly = "level";
-        boolean flag = true;
-        if (chekPoly(poly, flag)) {
+        //boolean flag = true;
+        if (chekPoly(poly)) {
             System.out.println("Yes");
         }else {
             System.out.println("No");
         }
     }
-    public static boolean chekPoly(String poly, boolean flag){
+    public static boolean chekPoly(String poly){
         int len = poly.length();
         int k = len-1;
         for (int i = 0; i < len / 2; i++) {
             if (poly.charAt(i) != poly.charAt(k)) {
-                flag = false;
-                break;
+                return false;
             }
             k--;
         }
-        return flag;
+        return true;
     }
 }
